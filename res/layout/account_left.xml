@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左拉抽屉的账号 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingBottom="40dp"
+    android:paddingTop="40dp" >
+
+    <ImageView
+        android:id="@+id/portrait"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/portrait" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/portrait"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/portrait"
+        android:text="@string/nickname"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/portrait"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/portrait"
+        android:text="@string/account"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/arrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/arrows_yellow" />
+
+</RelativeLayout>

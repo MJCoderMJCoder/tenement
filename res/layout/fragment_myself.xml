@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray3"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/portrait"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/portrait" />
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/portrait"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/portrait"
+                android:text="@string/nickname"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/portrait"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/portrait"
+                android:text="@string/account"
+                android:textColor="@color/gray2"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/arrowsUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:src="@drawable/arrows_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/community"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/communityHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/community"
+                android:drawablePadding="5dp"
+                android:text="@string/communityHint1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/communityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/communityHint"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrows_gray"
+                android:gravity="right"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="田森安宁街住宅楼"
+                android:textColor="@color/yello1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/community"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/addressHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/address"
+                android:drawablePadding="5dp"
+                android:text="@string/address"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/addressValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/addressHint"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrows_gray"
+                android:gravity="right"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="2单元5层03房间"
+                android:textColor="@color/yello1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/newPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="5dp"
+                android:text="@string/pwHint1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/safety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/newPassword"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/newPassword"
+                android:padding="1dp"
+                android:text="@string/zhong"
+                android:textColor="@color/redpacket"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/safety"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrows_gray"
+                android:gravity="right"
+                android:paddingRight="15dp"
+                android:text="@string/modify"
+                android:textColor="@color/yello1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pw"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/version"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/versionNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/arrows_gray"
+                android:paddingRight="15dp"
+                android:text="v1.0"
+                android:textColor="@color/yello1"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/textCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/evaluateUs"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/arrowsCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/arrows_gray" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/common"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/exit_btn"
+            android:gravity="center"
+            android:text="@string/exit"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</ScrollView>

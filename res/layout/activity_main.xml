@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray3" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/yello1" >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:text="@string/SCYS"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/home"
+            style="@style/bottomMenu"
+            android:drawableTop="@drawable/home_selector"
+            android:text="@string/home"
+            android:textColor="@drawable/text_selector" />
+
+        <!--
+             <TextView
+            android:id="@+id/repairs"
+            style="@style/bottomMenu"
+            android:drawableTop="@drawable/repairs_selector"
+            android:text="@string/repairs"
+            android:textColor="@drawable/text_selector" />
+        -->
+
+        <TextView
+            android:id="@+id/notification"
+            style="@style/bottomMenu"
+            android:drawableTop="@drawable/notification_selector"
+            android:text="@string/notification"
+            android:textColor="@drawable/text_selector" />
+
+        <TextView
+            android:id="@+id/myself"
+            style="@style/bottomMenu"
+            android:drawableTop="@drawable/myself_selector"
+            android:text="@string/myself"
+            android:textColor="@drawable/text_selector" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottombar"
+        android:layout_marginTop="4dp"
+        android:background="@color/gray1" />
+
+    <FrameLayout
+        android:id="@+id/centerContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line1"
+        android:layout_below="@+id/topbar" >
+    </FrameLayout>
+
+    <!-- 下面的是红包 -->
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/redPacket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/redpacket"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rpdRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/redPacketDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="菲达科技"
+                android:textColor="@color/redpacket"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/getRedPacket"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/redpacket_btn"
+            android:gravity="center"
+            android:text="@string/receiveRedPacket"
+            android:textColor="@color/redpacket"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

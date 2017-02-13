@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/redpacket" >
+
+    <TextView
+        android:id="@+id/redPacketDetail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:text="菲达科技\n菲达科技"
+        android:textColor="@color/redpacket"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/redpacket_btn"
+        android:gravity="center"
+        android:text="@string/receiveRedPacket"
+        android:textColor="@color/redpacket"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
